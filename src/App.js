@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import AddPost from "./components/AddPost";
+import AddOthers from "./components/AddOthers";
+import Posts from "./components/Posts";
+import Hobbies from "./components/Hobbies";
+import Places from "./components/Places";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1 id="err-msg">Please use desktop or laptop screen size (at least 1000px) to view</h1>
+      <div className="App">
+        <AddPost />
+        <AddOthers />
+        <Posts />
+        <Hobbies />
+        <Places />
+      </div>
+    </>
   );
 }
 
-export default App;
